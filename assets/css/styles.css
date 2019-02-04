@@ -1,5 +1,5 @@
 body {
-    background-color:rgb(241,195,148);
+    background-color:rgb(167, 167, 167);
     /*
     --SAME COLOR IN DIFFERENT NOTATIONS --
     #f1c394
@@ -10,12 +10,12 @@ body {
     */
 }
 
-.carousel-inner {
+#cover-image {
     box-shadow: 0 0 .5em 0 black;
     transition: 0.3s;
 }
 
-.wide-author-container {
+.wide-title-container {
     position: absolute;
     width: 100%;
     top: 12vw;
@@ -24,18 +24,7 @@ body {
 }
 
 
-
-.author-img {
-    height: 18vw;
-
-    box-shadow: 
-    -.05em -.05em 2.5em rgb(27, 27, 27),
-    -.05em .05em 2.5em rgb(27, 27, 27),
-    -.075em 0 2.5em rgb(27, 27, 27),
-    0 -.075em 2.5em rgb(27, 27, 27);
-}
-
-#today-top {
+#sub-title {
     color: black;
     text-shadow: 
     -.05em -.05em 2.5em white,
@@ -48,7 +37,7 @@ body {
     0 .075em 2.5em white;
 }
 
-.author-name {
+.title {
     color: white;
     text-shadow: 
     -.05em -.05em 2.5em rgb(27, 27, 27),
@@ -62,59 +51,22 @@ body {
 }
 
 
-.author-bio {
-    color: white;
-    text-shadow: 
-    -.05em -.05em 1.5em rgb(27, 27, 27),
-    .05em -.05em 1.5em rgb(27, 27, 27),
-    -.05em .05em 1.5em rgb(27, 27, 27),
-    .05em .05em 1.5em rgb(27, 27, 27),
-    -.075em 0 1.5em rgb(27, 27, 27),
-    .075em 0 1.5em rgb(27, 27, 27),
-    0 -.075em 1.5em rgb(27, 27, 27),
-    0 .075em 1.5em rgb(27, 27, 27);
 
-}
-
-
-/* SEARCH RESULT & AUTHOR'S MOST POPULAR BOOKS */
+/* TITLES */
 
 #popular-title {
-    margin: 1em 0em;
+    margin: 3em 0em 1em 0em;
     font-weight: bold;
 }
 
-.book-image {
-    height: 18vw;
-    /* Add shadows to create a 3D effect */
-    box-shadow: 0 .1em .25em 0 black;
-    transition: 0.3s;
+
+/* TRAIN SCHEDULE TABLE */
+
+
+#schedule {
+    margin-top: 2em;
 }
 
-  /* On mouse-over, add a deeper shadow */
-.book-image:hover {
-    box-shadow: 0 .5em 1.5em 0 black;
-}
-.book-title {
-    margin-top: .5em;
-}
-
-
-/* COMPLETE WORKS TABLE */
-
-#complete-works-title {
-    margin: 1em 0em;
+#column-headers {
     font-weight: bold;
-}
-
-.table-book-image {
-    height: 5vw;
-}
-
-.last-column {
-    align-content: flex-end;
-}
-
-.table-rating-image {
-    width: 5em;
 }
