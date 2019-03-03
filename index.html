@@ -1,135 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
 
-    <!-- link to css reset file -->
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <!-- link to Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <!-- link to custom css file -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- link to css reset file -->
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <!-- link to Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- link to custom css file -->
+  <link rel="stylesheet" href="assets/css/styles.css">
 
-    <!-- Link to MomentJS -->
-    <!-- <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+  <!-- Link to MomentJS -->
+  <!-- <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
 </head>
 
 <body>
 
-    <div id="cover-image">
-                <img src="./assets/images/train_photograph_cover_8.jpg" class="d-block w-100" alt="...">
-    </div>
+  <div id="cover-image">
+    <img src="./assets/images/train_photograph_cover_8.jpg" class="d-block w-100" alt="...">
+  </div>
 
-    <!-- AUTHOR INFO CONTAINER -->
-    <div class="wide-title-container">
-        <div class="container">
-
-            <div class="row">
-                <div class="col col-xs-6">
-
-                    <div class="col-9 title-box">
-                        <div class="container">
-                            <div class="row title">
-                                <h1>Train Schedule</h1>
-                            </div>
-                            <div class="row" id="sub-title">
-                                <h3>Choo - choo!</h3>
-                            </div>
-                            <br>
-
-                        </div>
-                    </div>
-                        
-                </div>
-            </div>
-            
-        </div>
-    </div>
-
-
-        <!-- COMPLETE WORKS CONTAINER -->
-    <div class="container" id="schedule">
-            <div id="popular-title">Current Train Schedule</div>
-        <table class="table table-sm table-hover">
-                <thead id="column-headers">
-                  <tr>
-                    <th scope="col">Train Name</th>
-                    <th scope="col">Destination</th>
-                    <th scope="col">First Train Time</th>
-                    <th scope="col">Frequency</th>
-                    <th scope="col">Next Arrival</th>
-                    <th scope="col">Minutes Away</th>
-                  </tr>
-                </thead>
-                <tbody id="train-table">
-                  <tr>
-                    <th scope="row">Trenton Express</th>
-                    <td>Sacramento, CA</td>
-                    <td>11:55</td>
-                    <td>90</td>
-                    <td>Calculating</td>
-                    <td>Calculating</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Oregon Trail</th>
-                    <td>Sacramento, CA</td>
-                    <td>8:35</td>
-                    <td>90</td>
-                    <td>Calculating</td>
-                    <td>Calculating</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Midnight Carriage</th>
-                    <td>Sacramento, CA</td>
-                    <td>3:45</td>
-                    <td>90</td>
-                    <td>Calculating</td>
-                    <td>Calculating</td>
-                  </tr>
-                </tbody>
-              </table>
-    </div>
-
+  <!-- Title CONTAINER -->
+  <div class="wide-title-container">
     <div class="container">
-            <div id="popular-title">Add Train</div>
-            <form>
-                    <div class="form-group">
-                      <!-- <label for="train-name">Train Name</label> -->
-                      <input class="form-control" type="text" id="train-name" placeholder="Train Name">
-                    </div>
-                    <div class="form-group">
-                      <!-- <label for="train-name">Destination</label> -->
-                      <input class="form-control" type="text" id="destination" placeholder="Destination">
-                    </div>
-                    <div class="form-group">
-                      <!-- <label for="train-name">First Train Name</label> -->
-                      <input class="form-control" type="text" id="first-train-time" placeholder="First Train Time">
-                      <small id="emailHelp" class="form-text text-muted">HH:mm - Military Time</small>
-                    </div>
-                    <div class="form-group">
-                      <!-- <label for="train-name">Frequency</label> -->
-                      <input class="form-control" type="text" id="frequency" placeholder="Frequency">
-                      <small id="emailHelp" class="form-text text-muted">In Minutes (ex: 90, 15, or 5)</small>
-                    </div>
 
-                    <button type="submit" class="btn btn-primary" id="submit-button">Submit</button>
-                  </form>
+      <div class="row">
+        <div class="col col-xs-6">
+
+          <div class="col-9 title-box">
+            <div class="container">
+              <div class="row title">
+                <h1>Train Schedule</h1>
+              </div>
+              <div class="row" id="sub-title">
+                <h3>Choo - choo!</h3>
+              </div>
+              <br>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
 
     </div>
+  </div>
 
 
-    <!-- Bootstrap Javascript and jQuery links -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <!-- TABLE CONTAINER -->
+  <div class="container" id="schedule">
+    <div class="row">
+      <div class="col">
+        <div id="popular-title">Current Train Schedule</div>
+        <table class="table table-sm table-hover">
+          <thead id="column-headers">
+            <tr>
+              <th scope="col">Train Name</th>
+              <th scope="col">Destination</th>
+              <th scope="col">First Train Time</th>
+              <th scope="col">Frequency</th>
+              <th scope="col">Next Arrival</th>
+              <th scope="col">Minutes Away</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody id="train-table">
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div id="popular-title">Add Train</div>
+        <form>
+          <div class="form-group">
+            <!-- <label for="train-name">Train Name</label> -->
+            <input class="form-control" type="text" id="train-name" placeholder="Train Name">
+          </div>
+          <div class="form-group">
+            <!-- <label for="train-name">Destination</label> -->
+            <input class="form-control" type="text" id="destination" placeholder="Destination">
+          </div>
+          <div class="form-group">
+            <!-- <label for="train-name">First Train Name</label> -->
+            <input class="form-control" type="text" id="first-train-time" placeholder="First Train Time">
+            <small id="emailHelp" class="form-text text-muted">HH:mm - Military Time</small>
+          </div>
+          <div class="form-group">
+            <!-- <label for="train-name">Frequency</label> -->
+            <input class="form-control" type="text" id="frequency" placeholder="Frequency">
+            <small id="emailHelp" class="form-text text-muted">In Minutes (ex: 90, 15, or 5)</small>
+          </div>
+
+          <button type="submit" class="btn btn-primary" id="submit-button">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Firebase link -->
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+
+  <!-- Bootstrap Javascript and jQuery links -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
 
 
-    <!-- Link to custom Javascript -->
-    <script src="./assets/javascript/main.js"></script>
+  <!-- Link to custom Javascript -->
+  <script src="./assets/javascript/main.js"></script>
 
 </body>
+
 </html>
