@@ -167,10 +167,12 @@ database.ref().on("child_added", function (childSnapshot) {
             $('<td>', {
                 text: minutesAway
             }),
-            $('<td>').append(
+            $('<td>', {
+                class: 'button-column text-xs-right text-right'
+            }).append(
                 $('<button>', {
                     type: "button",
-                    class: "btn btn-secondary btn-sm remove-button",
+                    class: "btn btn-outline-secondary btn-sm remove-button",
                     text: 'Remove',
                     // train-schedule row marker that is same as train-mun-* in the <tr> html element 
                     // that allows deletetion of correct html element upon click of the Remove button

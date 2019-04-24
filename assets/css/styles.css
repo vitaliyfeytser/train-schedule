@@ -70,3 +70,21 @@ body {
 #column-headers {
     font-weight: bold;
 }
+
+.contact-icons {
+    height: 2em;
+    margin: .5em;
+    opacity: .5;
+}
+
+.contact-icons:hover {
+    /* height: 2.1em; */
+    transform: scale(1.1);
+    margin: .5em;
+    opacity: 1;
+}
+
+.footer {
+    justify-content: center;
+    text-align: center;
+}
